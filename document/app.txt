@@ -1,0 +1,5 @@
+Controllers, ficaram as classes que se comunicam com views e models;
+
+Models ficam os arquivos de comunicação com bd;
+
+Views é pasta em q fica vizivel ao usuario.

@@ -1,0 +1,18 @@
+{
+    "name": "caioa/ekinox",
+    "description": "Sistema principal Ekinox",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Caioa\\Ekinox\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Caio Matheus dos Santos Abra",
+            "email": "caioabra41@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
