@@ -4,8 +4,12 @@
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "Caioa\\Ekinox\\": "src/"
-        }
+            "app\\":"app/",
+            "core\\":"core/"
+        },
+        "files": [
+            "config/config.php"
+        ]
     },
     "authors": [
         {
@@ -14,5 +18,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": ">=7.2"
+    }
 }
