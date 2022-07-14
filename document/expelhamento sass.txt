@@ -1,0 +1,1 @@
+sass --watch D:\WampServer\www\Ekinox\config\src\scss\index.scss D:\WampServer\www\Ekinox\config\src\css\index.css
