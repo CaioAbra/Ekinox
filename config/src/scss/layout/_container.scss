@@ -15,26 +15,49 @@
         @include container-adjust;
     }
 
-    @media (min-width: 576px) {
-        max-width: 540px;
+    // smartphones
+    @media (min-width: 480px) {
+        max-width: 460px;
 
         &-sm {
-            max-width: 540px;
+            max-width: 460px;
         }
     }
 
-    @media (min-width: 768px) {
-        max-width: 720px;
+    @media (min-width: 576px) {
+        max-width: 560px;
 
         &-sm {
-            max-width: 720px;
+            max-width: 560px;
+        }
+    }
+
+    //tablets
+    @media (min-width: 768px) {
+        max-width: 740px;
+
+        &-sm {
+            max-width: 740px;
         }
 
         &-md {
-            max-width: 720px;
+            max-width: 740px;
         }
     }
 
+    @media (min-width: 801px) {
+        max-width: 780px;
+
+        &-sm {
+            max-width: 780px;
+        }
+
+        &-md {
+            max-width: 780px;
+        }
+    }
+
+    // large laptops
     @media (min-width: 992px) {
         max-width: 960px;
 
@@ -55,25 +78,46 @@
     }
 
     @media (min-width: 1025px) {
-        max-width: 1020px;
+        max-width: 1000px;
 
         &-sm {
-            max-width: 1020px;
+            max-width: 1000px;
         }
 
         &-md {
-            max-width: 1020px;
+            max-width: 1000px;
         }
 
         &-lg {
-            max-width: 1020px;
+            max-width: 1000px;
         }
 
         &-xl {
-            max-width: 1020px;
+            max-width: 1000px;
         }
     }
 
+    @media (min-width: 1281px) {
+        max-width: 1260px;
+
+        &-sm {
+            max-width: 1260px
+        }
+
+        &-md {
+            max-width: 1260px
+        }
+
+        &-lg {
+            max-width: 1260px
+        }
+
+        &-xl {
+            max-width: 1260px
+        }
+    }
+
+    // big desk
     @media (min-width: 1400px) {
         max-width: 1320px;
 
@@ -118,3 +162,4 @@
         }
     }
 }
+
