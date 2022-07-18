@@ -1,22 +1,2 @@
-$breakpoints: (
-    na: 0em,
-    xs: 20em,
-    sm: 30.063em,
-    md: 48.063em,
-    lg: 79.938em,
-    xl: 100em,
-);
-
-// $container-sizes: (
-//     sm: map-get($breakpoints, sm) - 1.875em,
-//     md: map-get($breakpoints, md) - 2.5em,
-//     lg: map-get($breakpoints, lg) - 3.125em,
-//     xl: map-get($breakpoints, xl) - 25em
-// );
-
-$container-sizes: (
-    sm: calc(100% - 1vw),
-    md: calc(100% - 2vw),
-    lg: calc(100% - 3vw),
-    xl: calc(100% - 4vw)
-);
+$bs-gutter-x: 1.5em;
+$bs-gutter-y: 0;

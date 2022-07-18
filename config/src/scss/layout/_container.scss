@@ -1,45 +1,120 @@
-@function bp($bp) {
-    @return map-get($breakpoints, $bp);
-}
-
-@function container($container-size, $true-val: false) {
-    @return map-get($container-sizes, $container-size);
+.container-fluid {
+    width: 100%;
+    @include container-adjust;
 }
 
 .container {
-    padding-right: .75rem;
-    padding-left: .75rem;
-    width: 100%;
+    @include container-adjust;
 
-    &:not(.is-fluid) {
-        margin: 0 auto;
+    &-sm,
+    &-md,
+    &-lg,
+    &-xl,
+    &-xxl,
+    &-ext {
+        @include container-adjust;
+    }
 
-        @each $bp,
-        $container-size in $container-sizes {
-            @include min(#{bp(#{$bp})
+    @media (min-width: 576px) {
+        max-width: 540px;
 
-        }) {
-            width: 100%;
-            max-width: container(#{$bp});
+        &-sm {
+            max-width: 540px;
         }
     }
-}
-}
 
-@each $bp,
-$container-size in $container-sizes {
-    .container-#{$bp} {
-        margin: 0 auto;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        width: 100%;
+    @media (min-width: 768px) {
+        max-width: 720px;
 
-        $i: index($container-sizes, $bp $container-size);
+        &-sm {
+            max-width: 720px;
+        }
 
-        @for $j from $i through length($container-sizes) {
-            @include min(#{bp(nth(nth($container-sizes, $j), 1))}) {
-                max-width: container(#{nth(nth($container-sizes, $j), 1)});
-            }
+        &-md {
+            max-width: 720px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+
+        &-sm {
+            max-width: 960px;
+
+        }
+
+        &-md {
+            max-width: 960px;
+
+        }
+
+        &-lg {
+            max-width: 960px;
+
+        }
+    }
+
+    @media (min-width: 1025px) {
+        max-width: 1020px;
+
+        &-sm {
+            max-width: 1020px;
+        }
+
+        &-md {
+            max-width: 1020px;
+        }
+
+        &-lg {
+            max-width: 1020px;
+        }
+
+        &-xl {
+            max-width: 1020px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+
+        &-sm {
+            max-width: 1320px;
+        }
+
+        &-md {
+            max-width: 1320px;
+        }
+
+        &-lg {
+            max-width: 1320px;
+        }
+
+        &-xxl {
+            max-width: 1320px;
+        }
+    }
+
+    @media (min-width: 1800px) {
+        max-width: 1720px;
+
+        &-sm {
+            max-width: 1720px;
+        }
+
+        &-md {
+            max-width: 1720px;
+        }
+
+        &-lg {
+            max-width: 1720px;
+        }
+
+        &-xl {
+            max-width: 1720px;
+        }
+
+        &-ext {
+            max-width: 1720px;
         }
     }
 }

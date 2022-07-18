@@ -28,7 +28,10 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: 'Oxygen_Bold';
+    font-family: 'Oxygen-Bold';
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
 }
 
 p,
@@ -37,4 +40,6 @@ span,
 .span,
 a {
     font-family: 'Oxygen-Regular';
+    margin-top: 0;
+    margin-bottom: 1rem;
 }

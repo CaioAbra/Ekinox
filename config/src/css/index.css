@@ -33,7 +33,10 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Oxygen_Bold";
+  font-family: "Oxygen-Bold";
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 p,
@@ -42,116 +45,115 @@ span,
 .span,
 a {
   font-family: "Oxygen-Regular";
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  width: 100%;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  margin-right: auto;
+  margin-left: auto;
 }
-.container:not(.is-fluid) {
-  margin: 0 auto;
+.container-sm, .container-md, .container-lg, .container-xl, .container-xxl, .container-ext {
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  margin-right: auto;
+  margin-left: auto;
 }
-@media only screen and (min-width: 30.063em) {
-  .container:not(.is-fluid) {
-    width: 100%;
-    max-width: calc(100% - 1vw);
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
-}
-@media only screen and (min-width: 48.063em) {
-  .container:not(.is-fluid) {
-    width: 100%;
-    max-width: calc(100% - 2vw);
-  }
-}
-@media only screen and (min-width: 79.938em) {
-  .container:not(.is-fluid) {
-    width: 100%;
-    max-width: calc(100% - 3vw);
-  }
-}
-@media only screen and (min-width: 100em) {
-  .container:not(.is-fluid) {
-    width: 100%;
-    max-width: calc(100% - 4vw);
-  }
-}
-
-.container-sm {
-  margin: 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  width: 100%;
-}
-@media only screen and (min-width: 30.063em) {
   .container-sm {
-    max-width: calc(100% - 1vw);
+    max-width: 540px;
   }
 }
-@media only screen and (min-width: 48.063em) {
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
   .container-sm {
-    max-width: calc(100% - 2vw);
+    max-width: 720px;
   }
-}
-@media only screen and (min-width: 79.938em) {
-  .container-sm {
-    max-width: calc(100% - 3vw);
-  }
-}
-@media only screen and (min-width: 100em) {
-  .container-sm {
-    max-width: calc(100% - 4vw);
-  }
-}
-
-.container-md {
-  margin: 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  width: 100%;
-}
-@media only screen and (min-width: 48.063em) {
   .container-md {
-    max-width: calc(100% - 2vw);
+    max-width: 720px;
   }
 }
-@media only screen and (min-width: 79.938em) {
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .container-sm {
+    max-width: 960px;
+  }
   .container-md {
-    max-width: calc(100% - 3vw);
+    max-width: 960px;
   }
-}
-@media only screen and (min-width: 100em) {
-  .container-md {
-    max-width: calc(100% - 4vw);
-  }
-}
-
-.container-lg {
-  margin: 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  width: 100%;
-}
-@media only screen and (min-width: 79.938em) {
   .container-lg {
-    max-width: calc(100% - 3vw);
+    max-width: 960px;
   }
 }
-@media only screen and (min-width: 100em) {
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1020px;
+  }
+  .container-sm {
+    max-width: 1020px;
+  }
+  .container-md {
+    max-width: 1020px;
+  }
   .container-lg {
-    max-width: calc(100% - 4vw);
+    max-width: 1020px;
   }
-}
-
-.container-xl {
-  margin: 0 auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  width: 100%;
-}
-@media only screen and (min-width: 100em) {
   .container-xl {
-    max-width: calc(100% - 4vw);
+    max-width: 1020px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .container-sm {
+    max-width: 1320px;
+  }
+  .container-md {
+    max-width: 1320px;
+  }
+  .container-lg {
+    max-width: 1320px;
+  }
+  .container-xxl {
+    max-width: 1320px;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1720px;
+  }
+  .container-sm {
+    max-width: 1720px;
+  }
+  .container-md {
+    max-width: 1720px;
+  }
+  .container-lg {
+    max-width: 1720px;
+  }
+  .container-xl {
+    max-width: 1720px;
+  }
+  .container-ext {
+    max-width: 1720px;
   }
 }
 
@@ -163,10 +165,11 @@ a {
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  min-height: 100vh;
-  overflow: hidden;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /*# sourceMappingURL=index.css.map */
