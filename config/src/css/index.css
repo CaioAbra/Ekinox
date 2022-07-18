@@ -198,14 +198,13 @@ a {
   flex-wrap: wrap;
   margin: 0;
   width: 100%;
+  align-items: baseline;
 }
 
 .row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: 0.75em;
-  padding-left: 0.75em;
   margin-top: 0;
 }
 

@@ -2,9 +2,9 @@
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc($bs-gutter-x * .5);
-    padding-left: calc($bs-gutter-x * .5);
     margin-top: $bs-gutter-y;
+    // padding-right: calc($bs-gutter-x * .5);
+    // padding-left: calc($bs-gutter-x * .5);
 }
 
 .col {
