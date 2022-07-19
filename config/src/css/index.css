@@ -46,7 +46,6 @@ span,
 a {
   font-family: "Oxygen-Regular";
   margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 .container-fluid {
@@ -776,6 +775,37 @@ a {
     flex: 0 0 auto;
     width: 100%;
   }
+}
+
+nav,
+.navbar {
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+nav > .container, nav > .container-sm, nav > .container-md, nav > .container-lg, nav > .container-xl, nav > .container-exl, nav > .container-fluid,
+.navbar > .container,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-exl,
+.navbar > .container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  padding-top: 0.3215em;
+  padding-bottom: 0.3215em;
+  margin-right: 1em;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 ::after,
