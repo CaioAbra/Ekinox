@@ -10,12 +10,10 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="nav navbar-md">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>

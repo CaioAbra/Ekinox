@@ -167,6 +167,9 @@ a {
   .container-lg {
     max-width: 1320px;
   }
+  .container-xl {
+    max-width: 1320px;
+  }
   .container-xxl {
     max-width: 1320px;
   }
@@ -185,6 +188,9 @@ a {
     max-width: 1720px;
   }
   .container-xl {
+    max-width: 1720px;
+  }
+  .container-xxl {
     max-width: 1720px;
   }
   .container-ext {
@@ -778,25 +784,80 @@ a {
 }
 
 nav,
-.navbar {
+.nav {
   position: relative;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0;
 }
-nav > .container, nav > .container-sm, nav > .container-md, nav > .container-lg, nav > .container-xl, nav > .container-exl, nav > .container-fluid,
-.navbar > .container,
-.navbar > .container-sm,
-.navbar > .container-md,
-.navbar > .container-lg,
-.navbar > .container-xl,
-.navbar > .container-exl,
-.navbar > .container-fluid {
+nav > .container, nav > .container-sm, nav > .container-md, nav > .container-lg, nav > .container-xl, nav > .container-xxl, nav > .container-exl, nav > .container-fluid,
+.nav > .container,
+.nav > .container-sm,
+.nav > .container-md,
+.nav > .container-lg,
+.nav > .container-xl,
+.nav > .container-xxl,
+.nav > .container-exl,
+.nav > .container-fluid {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar-sm > .container > button.navbar-toggler, .navbar-sm > .container-sm > button.navbar-toggler, .navbar-sm > .container-md > button.navbar-toggler, .navbar-sm > .container-lg > button.navbar-toggler, .navbar-sm > .container-xl > button.navbar-toggler, .navbar-sm > .container-xxl > button.navbar-toggler, .navbar-sm > .container-exl > button.navbar-toggler, .navbar-sm > .container-fluid > button.navbar-toggler {
+  display: block;
+}
+@media (min-width: 576px) {
+  .navbar-sm > .container > button.navbar-toggler, .navbar-sm > .container-sm > button.navbar-toggler, .navbar-sm > .container-md > button.navbar-toggler, .navbar-sm > .container-lg > button.navbar-toggler, .navbar-sm > .container-xl > button.navbar-toggler, .navbar-sm > .container-xxl > button.navbar-toggler, .navbar-sm > .container-exl > button.navbar-toggler, .navbar-sm > .container-fluid > button.navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar-md > .container > .navbar-toggler, .navbar-md > .container-sm > .navbar-toggler, .navbar-md > .container-md > .navbar-toggler, .navbar-md > .container-lg > .navbar-toggler, .navbar-md > .container-xl > .navbar-toggler, .navbar-md > .container-xxl > .navbar-toggler, .navbar-md > .container-exl > .navbar-toggler, .navbar-md > .container-fluid > .navbar-toggler {
+  display: block;
+}
+@media (min-width: 768px) {
+  .navbar-md > .container > .navbar-toggler, .navbar-md > .container-sm > .navbar-toggler, .navbar-md > .container-md > .navbar-toggler, .navbar-md > .container-lg > .navbar-toggler, .navbar-md > .container-xl > .navbar-toggler, .navbar-md > .container-xxl > .navbar-toggler, .navbar-md > .container-exl > .navbar-toggler, .navbar-md > .container-fluid > .navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar-lg > .container > .navbar-toggler, .navbar-lg > .container-sm > .navbar-toggler, .navbar-lg > .container-md > .navbar-toggler, .navbar-lg > .container-lg > .navbar-toggler, .navbar-lg > .container-xl > .navbar-toggler, .navbar-lg > .container-xxl > .navbar-toggler, .navbar-lg > .container-exl > .navbar-toggler, .navbar-lg > .container-fluid > .navbar-toggler {
+  display: block;
+}
+@media (min-width: 992px) {
+  .navbar-lg > .container > .navbar-toggler, .navbar-lg > .container-sm > .navbar-toggler, .navbar-lg > .container-md > .navbar-toggler, .navbar-lg > .container-lg > .navbar-toggler, .navbar-lg > .container-xl > .navbar-toggler, .navbar-lg > .container-xxl > .navbar-toggler, .navbar-lg > .container-exl > .navbar-toggler, .navbar-lg > .container-fluid > .navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar-xl > .container > .navbar-toggler, .navbar-xl > .container-sm > .navbar-toggler, .navbar-xl > .container-md > .navbar-toggler, .navbar-xl > .container-lg > .navbar-toggler, .navbar-xl > .container-xl > .navbar-toggler, .navbar-xl > .container-xxl > .navbar-toggler, .navbar-xl > .container-exl > .navbar-toggler, .navbar-xl > .container-fluid > .navbar-toggler {
+  display: block;
+}
+@media (min-width: 1025px) {
+  .navbar-xl > .container > .navbar-toggler, .navbar-xl > .container-sm > .navbar-toggler, .navbar-xl > .container-md > .navbar-toggler, .navbar-xl > .container-lg > .navbar-toggler, .navbar-xl > .container-xl > .navbar-toggler, .navbar-xl > .container-xxl > .navbar-toggler, .navbar-xl > .container-exl > .navbar-toggler, .navbar-xl > .container-fluid > .navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar-xxl > .container > .navbar-toggler, .navbar-xxl > .container-sm > .navbar-toggler, .navbar-xxl > .container-md > .navbar-toggler, .navbar-xxl > .container-lg > .navbar-toggler, .navbar-xxl > .container-xl > .navbar-toggler, .navbar-xxl > .container-xxl > .navbar-toggler, .navbar-xxl > .container-exl > .navbar-toggler, .navbar-xxl > .container-fluid > .navbar-toggler {
+  display: block;
+}
+@media (min-width: 1400px) {
+  .navbar-xxl > .container > .navbar-toggler, .navbar-xxl > .container-sm > .navbar-toggler, .navbar-xxl > .container-md > .navbar-toggler, .navbar-xxl > .container-lg > .navbar-toggler, .navbar-xxl > .container-xl > .navbar-toggler, .navbar-xxl > .container-xxl > .navbar-toggler, .navbar-xxl > .container-exl > .navbar-toggler, .navbar-xxl > .container-fluid > .navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar-ext > .container > .navbar-toggler, .navbar-ext > .container-sm > .navbar-toggler, .navbar-ext > .container-md > .navbar-toggler, .navbar-ext > .container-lg > .navbar-toggler, .navbar-ext > .container-xl > .navbar-toggler, .navbar-ext > .container-xxl > .navbar-toggler, .navbar-ext > .container-exl > .navbar-toggler, .navbar-ext > .container-fluid > .navbar-toggler {
+  display: block;
+}
+@media (min-width: 1800px) {
+  .navbar-ext > .container > .navbar-toggler, .navbar-ext > .container-sm > .navbar-toggler, .navbar-ext > .container-md > .navbar-toggler, .navbar-ext > .container-lg > .navbar-toggler, .navbar-ext > .container-xl > .navbar-toggler, .navbar-ext > .container-xxl > .navbar-toggler, .navbar-ext > .container-exl > .navbar-toggler, .navbar-ext > .container-fluid > .navbar-toggler {
+    display: none;
+  }
 }
 
 .navbar-brand {

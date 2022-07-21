@@ -1,5 +1,5 @@
 nav,
-.navbar {
+.nav {
     position: relative;
     // display: flex;
     flex-wrap: wrap;
@@ -12,16 +12,145 @@ nav,
     &>.container-md,
     &>.container-lg,
     &>.container-xl,
+    &>.container-xxl,
     &>.container-exl,
     &>.container-fluid {
         display: flex;
         flex-wrap: inherit;
         align-items: center;
         justify-content: space-between;
+
+
+    }
+}
+
+.navbar-sm {
+
+    &>.container,
+    &>.container-sm,
+    &>.container-md,
+    &>.container-lg,
+    &>.container-xl,
+    &>.container-xxl,
+    &>.container-exl,
+    &>.container-fluid {
+
+        &>button.navbar-toggler {
+            display: block;
+
+            @media (min-width: 576px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.navbar-md {
+
+    &>.container,
+    &>.container-sm,
+    &>.container-md,
+    &>.container-lg,
+    &>.container-xl,
+    &>.container-xxl,
+    &>.container-exl,
+    &>.container-fluid {
+
+        &>.navbar-toggler {
+            display: block;
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.navbar-lg {
+
+    &>.container,
+    &>.container-sm,
+    &>.container-md,
+    &>.container-lg,
+    &>.container-xl,
+    &>.container-xxl,
+    &>.container-exl,
+    &>.container-fluid {
+        &>.navbar-toggler {
+            display: block;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.navbar-xl {
+
+    &>.container,
+    &>.container-sm,
+    &>.container-md,
+    &>.container-lg,
+    &>.container-xl,
+    &>.container-xxl,
+    &>.container-exl,
+    &>.container-fluid {
+
+        &>.navbar-toggler {
+            display: block;
+
+            @media (min-width: 1025px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.navbar-xxl {
+
+    &>.container,
+    &>.container-sm,
+    &>.container-md,
+    &>.container-lg,
+    &>.container-xl,
+    &>.container-xxl,
+    &>.container-exl,
+    &>.container-fluid {
+
+        &>.navbar-toggler {
+            display: block;
+
+            @media (min-width: 1400px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.navbar-ext {
+
+    &>.container,
+    &>.container-sm,
+    &>.container-md,
+    &>.container-lg,
+    &>.container-xl,
+    &>.container-xxl,
+    &>.container-exl,
+    &>.container-fluid {
+
+        &>.navbar-toggler {
+            display: block;
+
+            @media (min-width: 1800px) {
+                display: none;
+            }
+        }
     }
 }
 
 .navbar-brand {
+
     padding-top: .3215em;
     padding-bottom: .3215em;
     margin-right: 1em;
